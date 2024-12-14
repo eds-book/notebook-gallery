@@ -1,0 +1,8 @@
+name: notebook-gallery
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - pyyaml
+  - mystmd
+  - nodejs

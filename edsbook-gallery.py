@@ -99,14 +99,14 @@ def run_directive(name, data):
 
 def run_transform(name, data):
     with concurrent.futures.ThreadPoolExecutor() as pool:
-        # Find our cookbook nodes in the AST
-        cookbook_nodes = find_all_by_type(data, "edsbook-notebooks")
+        # Find our notebook nodes in the AST
+        notebook_nodes = find_all_by_type(data, "edsbook-notebooks")
 
-        # In-place mutate the AST to replace cookbook nodes with card grids
+        # In-place mutate the AST to replace notebook nodes with card grids
         children = render_notebooks(pool)
 
-        # Mutate our cookbook nodes in-place
-        for node in cookbook_nodes:
+        # Mutate our notebook nodes in-place
+        for node in notebook_nodes:
             node.clear()
             node.update(grid([1, 1, 2, 3], children))
             node["children"] = children

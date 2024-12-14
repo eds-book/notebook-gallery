@@ -21,7 +21,9 @@ DEFAULT_STYLE = {"background": "#4E66F6", **LAYOUT_STYLE}
 
 styles = {
     "domains": {"background": "#7A77B4", **LAYOUT_STYLE},
-    "packages": {"background": "#B83BC0", **LAYOUT_STYLE},
+    "type": {"background": "#B83BC0", **LAYOUT_STYLE},
+    "issue": {"background": "#B83BC0", **LAYOUT_STYLE},
+    "language": {"background": "#B83BC0", **LAYOUT_STYLE},
 }
 
 

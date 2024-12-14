@@ -1,0 +1,4 @@
+# Notebooks Gallery
+
+::: {edsbook-notebooks}
+:::

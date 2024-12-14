@@ -13,7 +13,7 @@ project:
     - type: executable
       path: edsbook-gallery.py
   toc:
-    - file: root.md
+    - file: page.md
 site:
   template: book-theme
   options:

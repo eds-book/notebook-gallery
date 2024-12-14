@@ -1,0 +1,21 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+extends:
+  - https://raw.githubusercontent.com/eds-book/edsbook-config/main/edsbook.yml
+project:
+  id: ad723b8c-0015-44ae-a390-52abb32c400c
+  # title:
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/eds-book/notebook-gallery
+  plugins:
+    - type: executable
+      path: edsbook-gallery.py
+  toc:
+    - file: root.md
+site:
+  template: book-theme
+  options:
+    hide_toc: true
+    hide_outline: true
